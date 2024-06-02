@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className="window">
-      <h2 className="header-text animate">API Gateway</h2>
-      <h2 className="header-text animate">Coming soon</h2>
+      <h2 className="header-text">API Gateway</h2>
+      <h2 className="header-subtext">Coming soon</h2>
     </div>
   );
 }

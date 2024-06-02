@@ -13,8 +13,14 @@
   padding-right: 3px;
 }
 
-.animate:hover {
+.header-text:hover {
   background-color: rgb(57, 128, 57);
   cursor: default;
   transition-duration: 0.5s;
+}
+
+.header-subtext {
+  margin: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
