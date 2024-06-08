@@ -1,6 +1,6 @@
-# Aegis Frontend Server
+# Aegis Frontend
 
-Frontend Server for Aegis Gateway Server
+Frontend for Aegis Gateway Server
 
 ## License
 
