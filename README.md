@@ -1,3 +1,7 @@
-# API Gateway Frontend
+# Aegis Frontend
 
-Frontend for https://github.com/MananGandhi1810/api-gateway
+Frontend for Aegis Gateway Server
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
