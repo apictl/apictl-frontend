@@ -7,6 +7,21 @@
   width: 100vw;
 }
 
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  background-image: url("./assets/logo.jpg");
+  background-position: center center;
+  background-size: 100%;
+  transition: background-size 0.5s ease;
+  margin: 3px;
+}
+
+.logo:hover {
+  background-size: 110%;
+}
+
 .header-text {
   margin: 3px;
   padding-left: 3px;
