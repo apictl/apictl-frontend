@@ -34,8 +34,8 @@ export default function Home() {
 		},
 	];
 	return (
-		<main className="h-full flex flex-col items-center justify-center max-w-7xl mx-auto">
-			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4 mb-[5vh] mt-[10vh] ">
+		<main className="h-full flex flex-col items-center justify-center max-w-7xl mx-auto space-y-24">
+			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4  mt-[10vh] ">
 				<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
 					your api is may be exposed,{" "}
 					<span className="bg-red p-2 inline-block -rotate-2 rounded-md">
@@ -48,9 +48,16 @@ export default function Home() {
 					your api keys are a network tab away from being exposed,
 					give us your api and we will give you a secure url
 				</h3>
+				<Link
+					href="/signup"
+					className="text-2xl bg-red px-4 pt-2 pb-3 lg:px-6 lg: rounded-full border border-red invert hover:invert-0 transition-all mt-5"
+				>
+					Secure Now!
+				</Link>
+
 				<div className=" h-[30vh] md:h-[50vh] w-[95%] md:w-[98%] max-w-[1440px]  bg-background rounded-lg p-4 text-center mt-24 border border-border"></div>
 			</section>
-			<section className="flex w-[95%] md:w-[98%] max-w-[1440px] flex-col items-center text-center justify-around md:ml-auto gap-24 mb-[5vh] md:mt-[10vh] bg-red opacity-85 md:opacity-100 rounded-[3rem] mx-auto p-8 lg:p-20 md:mx-10 lg:mx-20">
+			<section className="flex w-[95%] md:w-[98%] max-w-[1440px] flex-col items-center text-center justify-around md:ml-auto gap-24  bg-red opacity-85 md:opacity-100 rounded-[3rem] mx-auto p-8 lg:p-20 md:mx-10 lg:mx-20">
 				<div className="flex flex-col items-end justify-end gap-4 md:gap-2 lg:gap-4 w-full text-right">
 					<h1 className="text-4xl md:text-6xl font-bold">
 						why should you trust us?
@@ -82,7 +89,7 @@ export default function Home() {
 					</h3>
 				</div>
 			</section>
-			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4 my-[5vh] ">
+			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4 ">
 				<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
 					whats up with the money?
 				</h1>
@@ -106,7 +113,7 @@ export default function Home() {
 					</span>
 				</div>
 			</section>
-			<section className="flex flex-col justify-center items-center gap-4 md:gap-2 lg:gap-4 my-[5vh] ">
+			<section className="flex flex-col justify-center items-center gap-4 md:gap-2 lg:gap-4 pb-14 px-2 ">
 				<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
 					team behind this
 				</h1>

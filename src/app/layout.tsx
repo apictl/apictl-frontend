@@ -12,6 +12,25 @@ const inter = Manrope({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Aegis Gateway",
 	description: "Secure your APIs with Aegis Gateway",
+	metadataBase: new URL("https://aegis.manangandhi.tech"),
+	openGraph: {
+		title: "Aegis Gateway",
+		description: "Secure your APIs with Aegis Gateway",
+		url: "aegis.manangandhi.tech",
+		locale: "en-US",
+		type: "website",
+		images: [
+			{
+				url: "/og-image.png",
+				width: 1200,
+				height: 630,
+				alt: "Aegis Gateway",
+			},
+		],
+	},
+	alternates: {
+		canonical: "https://aegis.manangandhi.tech",
+	},
 };
 
 export default function RootLayout({
@@ -32,7 +51,10 @@ export default function RootLayout({
 					<div className="sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-border  bg-background backdrop-blur-lg">
 						<div className="max-w-7xl mx-auto px-4 lg:px-0 ">
 							<div className="relative flex h-24 items-center justify-arou">
-								<a className="text-lg md:text-2xl font-bold w-full inline-flex items-center gap-1">
+								<a
+									href="/"
+									className="text-lg md:text-2xl font-bold w-full inline-flex items-center gap-1"
+								>
 									<Image
 										src="/logo.svg"
 										alt="Aegis Gateway"
@@ -74,7 +96,7 @@ export default function RootLayout({
 									<SheetContent side="right">
 										<nav className="grid gap-6 text-lg font-medium">
 											<Link
-												href="#"
+												href="/"
 												className="flex items-center gap-2 text-lg font-semibold pb-2"
 											>
 												<p className="text-lg md:text-2xl font-normal w-full inline-flex items-center gap-4">
@@ -102,13 +124,13 @@ export default function RootLayout({
 											</Link>
 											<Link
 												href="#"
-												className="text-muted-foreground hover:text-foreground pl-2"
+												className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
 											>
 												login
 											</Link>
 											<Link
 												href="/signup"
-												className="text-md md:text-xl bg-red p-2 rounded-full w-fit align-middle"
+												className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
 											>
 												Secure Now!
 											</Link>
