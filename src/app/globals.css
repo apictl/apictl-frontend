@@ -8,7 +8,7 @@
 		--red: #ef4444;
 		--card: #e6e6e6;
 		--border: #e6e6e6;
-		--card2:#fff;
+		--card2: #fff;
 	}
 	.dark {
 		--background: #0f1214;
@@ -16,11 +16,12 @@
 		--red: #d8293a;
 		--card: #2d2d2d;
 		--border: #fbe8cc4d;
-		--card2:#000;
+		--card2: #000;
 	}
 }
 
 body {
+	scroll-behavior: smooth;
 	color: rgb(var(--foreground-rgb));
 	background: linear-gradient(
 			to bottom,

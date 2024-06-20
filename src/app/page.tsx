@@ -4,35 +4,40 @@ import { Check } from "lucide-react";
 import bhushan from "../assets/bhushan.png";
 import manan from "../assets/manan.png";
 import yash from "../assets/yash.png";
+import adith from "../assets/adith.png";
 
 export default function Home() {
 	const team = [
 		{
-			name: "manan",
-			image: manan,
+			name: "adith",
+			image: adith,
 			description: "backend developer",
+			link: "#",
 		},
 		{
 			name: "manan",
 			image: manan,
 			description: "backend developer",
+			link: "https://manangandhi.tech",
 		},
 		{
 			name: "bhushan",
 			image: bhushan,
 			description: "ux designer",
+			link: "https://bloodymary.framer.website/",
 		},
 		{
 			name: "yash",
 			image: yash,
 			description: "ui & frontend developer",
+			link: "https://yashd.tech",
 		},
 	];
 	return (
 		<main className="h-full flex flex-col items-center justify-center max-w-7xl mx-auto">
 			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4 mb-[5vh] mt-[10vh] ">
 				<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
-					your api is maybe exposed,{" "}
+					your api is may be exposed,{" "}
 					<span className="bg-red p-2 inline-block -rotate-2 rounded-md">
 						<span className="inline-block rotate-2">
 							lets fix it.
@@ -43,9 +48,9 @@ export default function Home() {
 					your api keys are a network tab away from being exposed,
 					give us your api and we will give you a secure url
 				</h3>
-				<div className=" w-[90%] md:w-[70rem] h-[30vh] md:h-[50rem] bg-background rounded-lg p-4 text-center mt-24 border border-border"></div>
+				<div className=" h-[30vh] md:h-[50vh] w-[95%] md:w-[98%] max-w-[1440px]  bg-background rounded-lg p-4 text-center mt-24 border border-border"></div>
 			</section>
-			<section className="flex w-[95%] md:w-[98%] max-w-[1440px] flex-col max-h-[900px] items-center text-center justify-around md:ml-auto gap-24 mb-[5vh] md:mt-[10vh] bg-red opacity-85 md:opacity-100 rounded-[3rem] mx-auto p-8 lg:p-20 md:mx-10 lg:mx-20">
+			<section className="flex w-[95%] md:w-[98%] max-w-[1440px] flex-col items-center text-center justify-around md:ml-auto gap-24 mb-[5vh] md:mt-[10vh] bg-red opacity-85 md:opacity-100 rounded-[3rem] mx-auto p-8 lg:p-20 md:mx-10 lg:mx-20">
 				<div className="flex flex-col items-end justify-end gap-4 md:gap-2 lg:gap-4 w-full text-right">
 					<h1 className="text-4xl md:text-6xl font-bold">
 						why should you trust us?
@@ -111,7 +116,10 @@ export default function Home() {
 				</p>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-7 w-full text-center justify-items-center items-center pt-6 mx-auto">
 					{team.map((teamMember) => (
-						<div
+						<Link
+							href={teamMember.link}
+							target="_blank"
+							rel="noreferrer"
 							key={teamMember.name}
 							className="flex flex-col items-center justify-center gap-1 w-fit md:w-full text-center hover:bg-card2 rounded-2xl transition-all p-10"
 						>
@@ -120,7 +128,7 @@ export default function Home() {
 								alt={teamMember.name}
 								width={150}
 								height={150}
-								className="rounded-full"
+								className="rounded-full "
 							/>
 							<h1 className="text-xl md:text-2xl">
 								{teamMember.name}
@@ -128,7 +136,7 @@ export default function Home() {
 							<p className="text-lg md:text-xl opacity-85">
 								{teamMember.description}
 							</p>
-						</div>
+						</Link>
 					))}
 				</div>
 			</section>

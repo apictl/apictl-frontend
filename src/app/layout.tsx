@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/sheet";
+import LenisWrapper from "@/components/lenis";
 const inter = Manrope({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,40 +30,37 @@ export default function RootLayout({
 					disableTransitionOnChange
 				>
 					<div className="sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-border  bg-background backdrop-blur-lg">
-						<div className="max-w-7xl mx-auto px-4 ">
+						<div className="max-w-7xl mx-auto px-4 lg:px-0 ">
 							<div className="relative flex h-24 items-center justify-arou">
-								<a className="text-lg md:text-2xl font-normal w-full inline-flex items-center gap-4">
+								<a className="text-lg md:text-2xl font-bold w-full inline-flex items-center gap-1">
 									<Image
 										src="/logo.svg"
 										alt="Aegis Gateway"
 										width={50}
 										height={80}
-										className="size-[40px] md:size-[80px] fill-red"
+										className="size-[40px] md:size-[60px] fill-red"
 									/>
-									Aegis Gateway
+									{/* Aegis Gateway */}
 								</a>
-								<div className="hidden md:flex w-full items-center text-center gap-4  md:gap-2 lg:gap-4 justify-end">
+								<div className="hidden md:flex w-full items-center text-center gap-5 justify-end">
 									<Link
 										href="/documentation"
-										className="text-md md:text-xl"
+										className="text-md"
 									>
 										Documentation
 									</Link>
-									<Link
-										href="/pricing"
-										className="text-md md:text-xl"
-									>
+									<Link href="/pricing" className="text-md ">
 										Pricing
 									</Link>
 									<Link
 										href="/login"
-										className="text-md md:text-xl"
+										className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
 									>
 										Login
 									</Link>
 									<Link
 										href="/signup"
-										className="text-md md:text-xl bg-red p-2 rounded-full"
+										className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
 									>
 										Secure Now!
 									</Link>
@@ -73,7 +71,7 @@ export default function RootLayout({
 											<Menu className="h-5 w-5" />
 										</button>
 									</SheetTrigger>
-									<SheetContent side="left">
+									<SheetContent side="right">
 										<nav className="grid gap-6 text-lg font-medium">
 											<Link
 												href="#"
@@ -110,7 +108,7 @@ export default function RootLayout({
 											</Link>
 											<Link
 												href="/signup"
-												className="text-md md:text-xl bg-red p-2 rounded-full w-fit"
+												className="text-md md:text-xl bg-red p-2 rounded-full w-fit align-middle"
 											>
 												Secure Now!
 											</Link>
@@ -120,7 +118,7 @@ export default function RootLayout({
 							</div>
 						</div>
 					</div>
-					{children}
+					<LenisWrapper>{children}</LenisWrapper>
 				</ThemeProvider>
 			</body>
 		</html>
