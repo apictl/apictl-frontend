@@ -76,13 +76,13 @@ export default function RootLayout({
 									</Link>
 									<Link
 										href="/login"
-										className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
+										className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red hover:invert transition-all"
 									>
 										Login
 									</Link>
 									<Link
 										href="/signup"
-										className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
+										className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red hover:invert transition-all "
 									>
 										Secure Now!
 									</Link>
@@ -130,7 +130,7 @@ export default function RootLayout({
 											</Link>
 											<Link
 												href="/signup"
-												className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
+												className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red hover:invert transition-all"
 											>
 												Secure Now!
 											</Link>
