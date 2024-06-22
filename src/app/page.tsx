@@ -41,7 +41,7 @@ export default function Home() {
 		},
 	];
 	return (
-		<main className="h-full flex flex-col items-center justify-center max-w-7xl mx-auto space-y-24">
+		<main className="h-full flex flex-col items-center justify-center max-w-7xl mx-auto space-y-24 mt-24">
 			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4  mt-[10vh] ">
 				<Slide className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
 					<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
@@ -186,7 +186,7 @@ export default function Home() {
 									height={150}
 									className="rounded-full "
 								/>
-								<h1 className="text-xl md:text-2xl">
+								<h1 className="text-xl md:text-2xl font-bold">
 									{teamMember.name}
 								</h1>
 								<p className="text-lg md:text-xl opacity-85">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Manrope,JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Link from "next/link";
@@ -48,7 +48,7 @@ export default function RootLayout({
 					defaultTheme="dark"
 					disableTransitionOnChange
 				>
-					<div className="sticky inset-x-0 top-0 z-30 w-full transition-all border-b border-border  bg-background backdrop-blur-lg">
+					<div className="fixed inset-x-0 top-0 z-30 w-full transition-all border-b border-border  bg-background backdrop-blur-lg">
 						<div className="max-w-7xl mx-auto px-4 lg:px-0 ">
 							<div className="relative flex h-24 items-center justify-arou">
 								<a
@@ -60,7 +60,7 @@ export default function RootLayout({
 										alt="Aegis Gateway"
 										width={50}
 										height={80}
-										className="size-[40px] md:size-[60px] fill-red"
+										className="size-[40px] md:size-[50px] fill-red"
 									/>
 									{/* Aegis Gateway */}
 								</a>
@@ -111,26 +111,26 @@ export default function RootLayout({
 												</p>
 											</Link>
 											<Link
-												href="#"
+												href="/dashboard"
 												className="hover:text-foreground pl-2"
 											>
 												Dashboard
 											</Link>
 											<Link
-												href="#"
+												href="/#pricing"
 												className="text-muted-foreground hover:text-foreground pl-2"
 											>
 												pricing
 											</Link>
 											<Link
-												href="#"
-												className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red"
+												href="/login"
+												className="text-md text-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red w-fit hover:invert transition-all"
 											>
 												login
 											</Link>
 											<Link
 												href="/signup"
-												className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red hover:invert transition-all"
+												className="text-md bg-red px-4 py-3 lg:px-6 lg:py-3 rounded-full border border-red hover:invert transition-all w-fit"
 											>
 												Secure Now!
 											</Link>

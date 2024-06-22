@@ -30,6 +30,7 @@ body {
 		)
 		rgb(var(--background-start-rgb));
 	text-transform: lowercase;
+	line-height: 100%;
 }
 
 @layer utilities {
