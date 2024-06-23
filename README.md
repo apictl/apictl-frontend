@@ -1,6 +1,6 @@
-# Aegis Frontend
+# apictl frontend
 
-Frontend for Aegis Gateway Server
+Frontend for apictl
 
 ## License
 
