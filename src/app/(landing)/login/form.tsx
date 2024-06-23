@@ -61,6 +61,7 @@ export default function MyForm() {
 				<input
 					{...form.register("password")}
 					className="rounded px-2 py-2 w-full bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
+					type="password"
 				/>
 				{form.formState.errors.password && (
 					<p className="text-red">
