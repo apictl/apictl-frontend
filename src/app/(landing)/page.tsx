@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Check } from "lucide-react";
-import bhushan from "../assets/bhushan.png";
-import manan from "../assets/manan.png";
-import yash from "../assets/yash.png";
-import adith from "../assets/adith.png";
+import bhushan from "@/assets/bhushan.png";
+import manan from "@/assets/manan.png";
+import yash from "@/assets/yash.png";
+import adith from "@/assets/adith.png"
 import {
 	Slide,
 	SlideUp,
@@ -63,7 +63,7 @@ export default function Home() {
 				>
 					<Link
 						href="/signup"
-						className="text-2xl bg-red px-4 pt-2 pb-3 lg:px-6 lg: rounded-full border border-red invert hover:invert-0 transition-all mt-5"
+						className="text-2xl bg-red px-4 pt-2 pb-3 lg:px-6 lg: rounded-full border border-red invert-0 hover:invert transition-all mt-5"
 					>
 						Secure Now!
 					</Link>
