@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
 	:root {
 		--background: #f7f7f7;
@@ -9,6 +10,7 @@
 		--card: #e6e6e6;
 		--border: #e6e6e6;
 		--card2: #fff;
+		--card3: #f0f0f0;
 	}
 	.dark {
 		--background: #0f1214;
@@ -17,6 +19,7 @@
 		--card: #2d2d2d;
 		--border: #fbe8cc4d;
 		--card2: #000;
+		--card3: #121212;
 	}
 }
 

@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { Manrope,JetBrains_Mono } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/sheet";
 import LenisWrapper from "@/components/lenis";
+import ModeToggle from "@/components/toggle";
 const inter = Manrope({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -22,23 +22,23 @@ export default function RootLayout({
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
+					enableSystem
 					disableTransitionOnChange
 				>
 					<div className="fixed inset-x-0 top-0 z-30 w-full transition-all border-b border-border  bg-background backdrop-blur-lg">
 						<div className="max-w-7xl mx-auto px-4 lg:px-0 ">
-							<div className="relative flex h-24 items-center justify-arou">
+							<div className="relative flex py-4 items-center">
 								<a
 									href="/"
 									className="text-lg md:text-2xl font-bold w-full inline-flex items-center gap-1"
 								>
 									<Image
 										src="/logo.svg"
-										alt="Aegis Gateway"
+										alt="apictl"
 										width={50}
 										height={80}
 										className="size-[40px] md:size-[50px] fill-red"
 									/>
-									{/* Aegis Gateway */}
 								</a>
 								<div className="hidden md:flex w-full items-center text-center gap-5 justify-end">
 									<Link
@@ -117,6 +117,34 @@ export default function RootLayout({
 						</div>
 					</div>
 					<LenisWrapper>{children}</LenisWrapper>
+					<footer className="p-5 px-5 lg:px-10 border-t border-border">
+						<div className="flex items-center justify-between gap-x-5">
+							<Link
+								href="/"
+								className="flex items-center gap-x-2"
+							>
+								<Image
+									className="h-8 w-8 rounded-full"
+									src="/logo.svg"
+									alt="Company Logo"
+									width={40}
+									height={40}
+								/>
+								<h2 className="text-base font-semibold text-foreground">
+									apictl
+								</h2>
+							</Link>
+							<ul className="flex items-center justify-end gap-x-3 md:gap-x-10 relative">
+								<li className="text-[15px]/normal font-medium text-foreground transition-all duration-100 ease-linear hover:opacity-80 hover:underline hover:underline-offset-4">
+									<a href="/">home</a>
+								</li>
+								<li className="text-[15px]/normal font-medium text-foreground transition-all duration-100 ease-linear hover:opacity-80 hover:underline hover:underline-offset-4">
+									<a href="/dashboard">dashboard</a>
+								</li>
+								<ModeToggle></ModeToggle>
+							</ul>
+						</div>
+					</footer>
 				</ThemeProvider>
 			</body>
 		</html>

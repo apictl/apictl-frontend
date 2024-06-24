@@ -43,13 +43,7 @@ export default function RootLayout({
 			<body
 				className={`bg-background text-foreground border-border antialiased ${inter.className}`}
 			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					disableTransitionOnChange
-				>
-					{children}
-				</ThemeProvider>
+				{children}
 			</body>
 		</html>
 	);

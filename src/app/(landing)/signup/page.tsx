@@ -30,8 +30,8 @@ export default function Login() {
 		techFacts[Math.floor(Math.random() * techFacts.length)];
 
 	return (
-		<div className="min-h-screen grid md:grid-cols-2 mx-auto max-w-[1440px]">
-			<div className="w-full h-full md:bg-[#121212] ">
+		<div className="min-h-screen grid md:grid-cols-2 mx-auto max-w-[1440px] ">
+			<div className="w-full h-full md:bg-card3 pb-5 ">
 				<div className="w-full h-full max-w-lg flex flex-col items-start mx-auto px-8 md:mt-14 justify-center text-left gap-4 md:ml-auto md:gap-2 lg:gap-4">
 					<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed inline-block text-left">
 						get started
@@ -48,7 +48,7 @@ export default function Login() {
 					cool to know that
 				</h1>
 				<FadeText
-					className="text-md max-w-[10ch] text-red invert opacity-80"
+					className="text-md max-w-[10ch] text-red invert dark:opacity-80"
 					direction="down"
 					framerProps={{
 						show: { transition: { delay: 0.2 } },

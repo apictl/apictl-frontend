@@ -31,7 +31,7 @@ export default function Login() {
 
 	return (
 		<div className="h-screen grid md:grid-cols-2 mx-auto max-w-[1440px]">
-			<div className="w-full md:bg-[#121212] ">
+			<div className="w-full md:bg-card3 ">
 				<div className="w-full h-full max-w-lg flex flex-col items-start mx-auto px-8 md:mt-14 justify-center text-left gap-4 md:ml-auto md:gap-2 lg:gap-4">
 					<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed inline-block text-left">
 						get started

@@ -45,11 +45,11 @@ export default function MyForm() {
 			onSubmit={form.handleSubmit((data) => onMyFormSubmit(data))}
 			className="w-full"
 		>
-			<div className="space-y-3 py-2">
+			<div className="space-y-3 py-2 ">
 				<label>First name</label>
 				<input
 					{...form.register("firstName")}
-					className="rounded px-2 py-2 w-full bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
+					className="rounded px-2 py-2 w-full bg-white dark:bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
 				/>
 				{form.formState.errors.firstName && (
 					<p className="text-red">
@@ -61,7 +61,7 @@ export default function MyForm() {
 				<label>Last name</label>
 				<input
 					{...form.register("lastName")}
-					className="rounded px-2 py-2 w-full bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
+					className="rounded px-2 py-2 w-full bg-white dark:bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
 				/>
 				{form.formState.errors.lastName && (
 					<p className="text-red">
@@ -73,7 +73,7 @@ export default function MyForm() {
 				<label>Email</label>
 				<input
 					{...form.register("email")}
-					className="rounded px-2 py-2 w-full bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
+					className="rounded px-2 py-2 w-full bg-white dark:bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
 				/>
 				{form.formState.errors.email && (
 					<p className="text-red">
@@ -87,7 +87,7 @@ export default function MyForm() {
 				lowercase letter, one number and one special character */}
 				<input
 					{...form.register("password")}
-					className="rounded px-2 py-2 w-full bg-white bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
+					className="rounded px-2 py-2 w-full bg-white dark:bg-opacity-5 backdrop-filter backdrop-blur-2xl focus:ring-0"
 				/>
 				{form.formState.errors.password && (
 					<p className="text-red">
