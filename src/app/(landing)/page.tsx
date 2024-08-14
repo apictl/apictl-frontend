@@ -45,7 +45,7 @@ export default function Home() {
 			<section className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4  mt-[10vh] ">
 				<Slide className="flex flex-col w-full max-w-7xl mx-auto items-center text-center justify-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
 					<h1 className=" text-4xl md:text-6xl font-bold leading-relaxed">
-						your api is may be exposed,{" "}
+						your api key might be exposed,{" "}
 						<span className="bg-red p-2 inline-block -rotate-2 rounded-md">
 							<span className="inline-block rotate-2">
 								lets fix it.
