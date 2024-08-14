@@ -19,7 +19,7 @@ export default function Home() {
 			name: "adith",
 			image: adith,
 			description: "backend developer",
-			link: "#",
+			link: "https://adith.tech",
 		},
 		{ 
 			name: "manan",
